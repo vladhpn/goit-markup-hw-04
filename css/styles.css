@@ -150,13 +150,13 @@ img {
 
 .auth-nav .contacts:hover,
 .auth-nav .contacts:focus {
-  font-weight: 500px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
+.auth-nav .contacts:hover svg,
+.auth-nav .contacts:focus svg {
+  color: var(--accent-color);
+}
 .link-phone {
   display: flex;
 }
@@ -168,30 +168,37 @@ img {
   margin-right: 10px;
   background-repeat: no-repeat;
   background-image: url("../images/phone.svg");
-  background-size: contain;
 }
 
 .link-mail {
   display: flex;
+  align-items: center;
 }
 
 .link-mail::before {
   content: "";
+  display: inline-block;
   width: 16px;
-  height: 14px;
-  margin-top: 3px;
+  height: 12px;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-image: url("../images/email.svg");
-  background-size: contain;
 }
 /* Hero */
 
 .hero {
-  max-width: auto;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
+  background-repeat: no-repeat;
   background-color: var(--background-color);
-  background-image: url(../images/header.jpg);
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.4) 50%
+    ),
+    url(../images/header.jpg);
 }
 
 .hero .title {
@@ -295,7 +302,6 @@ img {
 
 .work .title {
   margin-bottom: 50px;
-
   font-weight: 700px;
   font-size: 36px;
   line-height: 1.16;
@@ -353,6 +359,38 @@ img {
   text-align: center;
 }
 
+/* Clients */
+
+.clients {
+  padding-bottom: 94px;
+}
+
+.clients .title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.clients .catalog {
+  display: flex;
+}
+
+.catalog-list {
+  width: calc((100% - 30px * 5) / 6);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.catalog-list:not(:last-child) {
+  margin-right: 30px;
+}
 /* Footer */
 
 .footer {
@@ -389,9 +427,34 @@ img {
   padding-bottom: 60px;
 }
 
-/* Portfolio */
+.social {
+  margin-left: 70px;
+  padding-top: 72px;
+}
 
-.content 
+.social-item {
+  display: flex;
+}
+
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: white;
+  text-transform: uppercase;
+}
+
+.social-link {
+  border-radius: 50%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+/* Portfolio */
 
 /* Список работ - кнопка */
 .button-portfolio {
