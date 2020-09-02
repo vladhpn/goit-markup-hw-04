@@ -209,10 +209,6 @@ img {
 
 /* Преимущества команды */
 
-.about-us-container {
-  padding-bottom: 94px;
-}
-
 .section {
   display: flex;
   padding-top: 94px;
@@ -221,6 +217,7 @@ img {
 
 .section .item {
   width: calc((100% - 30px * 3) / 4);
+  padding-bottom: 94px;
 }
 
 .section .item:not(:last-child) {
@@ -341,8 +338,6 @@ img {
 
 .catalog {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .catalog-list {
