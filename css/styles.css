@@ -338,9 +338,13 @@ img {
 
 .catalog {
   display: flex;
+  justify-content: center;
 }
 
 .catalog-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 120px;
   border: 1px solid #afb1b8;
@@ -351,6 +355,7 @@ img {
 .catalog-list:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Footer */
 
 .footer {
