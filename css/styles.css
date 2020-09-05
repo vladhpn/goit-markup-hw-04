@@ -341,9 +341,36 @@ svg {
   justify-content: center;
 }
 
-/* .social-icon-item:not(:last-child) {
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icon-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-icon:hover {
+  fill: #fff;
+}
+
+.social-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon-item {
+  margin-bottom: 30px;
+}
+
+.social-icon-item:not(:last-child) {
   margin-right: 10px;
-}  */
+}
 
 /* Clients */
 
@@ -382,6 +409,8 @@ svg {
 }
 
 .catalog-icons {
+  width: 88px;
+  height: 46px;
   fill: #afb1b8;
 }
 
@@ -398,13 +427,25 @@ svg {
   background-color: var(--background-color);
 }
 
-.logo-footer {
-  display: inline-block;
+.footer-container {
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.logo-color-footer {
+  color: #fff;
 }
 
 .addresses {
+  margin-top: 20px;
   margin-bottom: 9px;
   font-weight: 400px;
   font-size: 14px;
@@ -422,10 +463,6 @@ svg {
 
 .mail-style {
   margin-bottom: 9px;
-}
-
-.phone-style {
-  padding-bottom: 60px;
 }
 
 .social {
