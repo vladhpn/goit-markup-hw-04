@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,9 +20,11 @@
     <header class="page-header">
       <div class="container flexbox">
         <nav class="navigation">
-          <a href="./index.html" class="logo">
-            <img src="./images/logo.svg" alt="" />
-          </a>
+          <div class="logo-header">
+            <a href="./index.html" class="logo">
+              Web<span class="logo-color-header">Studio</span>
+            </a>
+          </div>
 
           <ul class="site-nav list">
             <li class="items">
@@ -39,13 +41,25 @@
         <ul class="auth-nav list">
           <li class="link-mail">
             <a href="mailto:info@devstudio.com" class="contacts">
-              <!-- <img src="./images/email.svg" alt="" /> -->
+              <svg class="email-icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-email"
+                  width="16"
+                  height="12"
+                ></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="link-phone">
             <a href="tel:+380961111111" class="contacts">
-              <!-- <img src="./images/phone.svg" alt="" /> -->
+              <svg class="phone-icone">
+                <use
+                  href="./images/symbol-defs.svg#icon-phone"
+                  width="10"
+                  height="16"
+                ></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -80,7 +94,6 @@
 
       <article>
         <div class="container">
-          <!-- <div class="holder"> -->
           <section class="features">
             <ul class="features-element">
               <li>
@@ -175,22 +188,24 @@
     <footer class="footer">
       <div class="container flexbox">
         <nav>
-          <a href="./index.html" class="logo-footer">
-            <img src="./images/logofooter.svg " alt="" />
-          </a>
-          <address class="addresses">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="site-foot">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link">
-                <p class="mail-style">info@devstudio.com</p>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="link">
-                <p class="phone-style">+38 096 111 11 11</p>
-              </a>
-            </li>
-          </ul>
+          <div class="footer-container">
+            <a href="./index.html" class="logo-footer">
+              Web<span class="logo-color-footer">Studio</span>
+            </a>
+            <address class="addresses">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul class="site-foot">
+              <li>
+                <a href="mailto:info@devstudio.com" class="link">
+                  <p class="mail-style">info@devstudio.com</p>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link">
+                  <p class="phone-style">+38 096 111 11 11</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <!-- Соц. сети -->
@@ -198,23 +213,70 @@
           <h3 class="social-title">Присоединяйтесь</h3>
           <ul class="social-item">
             <li class="social-link">
-              <a href="" aria-label=" Ссылка на instagram">
-                <img src="./images/instagram2.svg" alt="instagram" />
+              <a
+                class="social-footer-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссылка Инстаграм"
+              >
+                <svg class="social-footer-icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                    width="20"
+                    height="20"
+                  ></use>
+                </svg>
               </a>
             </li>
-            <li class="social-link">
-              <a href="" aria-label=" Ссылка на twitter">
-                <img src="./images/twitter1.svg" alt="twitter" />
+
+            <li class="social-icon-item">
+              <a
+                class="social-footer-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссылка Инстаграм"
+              >
+                <svg class="social-footer-icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-twitter"
+                    width="20"
+                    height="20"
+                  ></use>
+                </svg>
               </a>
             </li>
-            <li class="social-link">
-              <a href="" aria-label=" Ссылка на facebook">
-                <img src="./images/facebook1.svg" alt="facebook" />
+
+            <li class="social-icon-item">
+              <a
+                class="social-footer-link"
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссылка Фейсбук"
+              >
+                <svg class="social-footer-icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
-            <li class="social-link">
-              <a href="" aria-label=" Ссылка на linkedin">
-                <img src="./images/linkedin1.svg" alt="linkedin" />
+
+            <li class="social-icon-item">
+              <a
+                class="social-footer-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссылка Линкедин"
+              >
+                <svg class="social-footer-icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-linkedin"
+                    width="20"
+                    height="20"
+                  ></use>
+                </svg>
               </a>
             </li>
           </ul>
